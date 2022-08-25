@@ -13,9 +13,7 @@ class Start {
 		// of each cell in column 1
                 double result = 0.0;
                 for (int i = 0; i < map.length; i++) {
-                    for (int j = 1; j < map.length; j++) {
-                        result += map[i][j];
-                    }
+                    result += map[i][1];
                 }
                 
                 System.out.println("Result is " + result);
