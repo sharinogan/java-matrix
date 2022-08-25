@@ -1,17 +1,11 @@
 class Start {
-	public static void main(String[] data) {
-		double[][] map = new double[4][5];      // value of each cell is 0.0
- 
-                // Given a square matrix, write code
-                // to print all cells in main diagonal
-                double[][] m = new double[37][37];
-                map[0][1] = 9.2;
-		map[1][1] = 8.7;
-		map[2][2] = 8.9;
-
-                for (int i = 0; i < map.length; i++) {
-                    System.out.println(map[i][i]);
-                }
-
+    public static void main(String[] data) {
+        int value = 8;
+	int[] stamp = { 5, 4, 1 };      // must be sorted in descending order
+	for(int i = 0; i < stamp.length; i++) {
+            int use = value / stamp[i];
+            System.out.println("Stamp " + stamp[i] + " use " + use + " item(s).");
+            value = value - use * stamp[i];
 	}
+    }
 }
